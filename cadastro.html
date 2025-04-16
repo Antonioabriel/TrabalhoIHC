@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguel de carro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="icon" href="favicon-32x32.png" type="image/png">    
+    <script src="cadastro.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <a href="home.html">Voltar</a>
+        <h2>Cadastro</h2>
+        <form action="">
+            <label for="nome">Nome:</label>
+            <input type="text" class="nome" name="nome" placeholder="Nome">
+            
+            <label for="gmail">Gmail:</label>
+            <input type="text" class="email" name="email"  placeholder="Email">
+            
+            <label for="senha">Senha:</label>
+            <input type="password" class="senha" name="senha"  placeholder="Senha">
+            
+            <label for="telefone">Telefone:</label>
+            <input type="text" class="tel" name="telefone"  placeholder="Telefone">
+
+            <label for="cpf">CPF:</label>
+            <input type="text" class="cpf" name="cpf" placeholder="CPF (apenas números)" pattern="\d{11}" required>
+
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" class="logradouro" name="logradouro" placeholder="Rua, Avenida, etc." required>
+
+            <label for="cep">CEP:</label>
+            <input type="text" class="cep" name="cep" placeholder="CEP (apenas números)" pattern="\d{8}" required>
+
+            <label for="municipio">Município:</label>
+            <input type="text" class="municipio" name="municipio" placeholder="Município" required>
+
+            <label for="numero_casa">numero_casa:</label>
+            <input type="text" class="numero_casa" name="numero_casa" placeholder="numero_casa" required>
+
+            <label for="estado">Estado:</label>
+            <input type="text" class="estado" name="estado" placeholder="UF" maxlength="2" required>
+
+            <label for="cnh_numero">Número da CNH:</label>
+            <input type="text" class="cnh_numero" name="cnh_numero" placeholder="Número da CNH" required>
+
+            <label for="cnh_categoria">CNH Categoria:</label>
+            <input type="text" class="cnh_categoria" name="cnh_categoria" placeholder="cnh_categoria" required>
+
+            <label for="cnh_validade">CNH Validade:</label>
+            <input type="date" class="cnh_validade" name="cnh_validade" placeholder="cnh_validade" required>
+
+            <label for="data_nascimento">Data Nascimento :</label>
+            <input type="date" class="data_nascimento" name="data_nascimento" placeholder="data_nascimento" required>
+            
+              
+            <button >Cadastrar</button>
+            
+        </form>
+    </div>
+</body>
+</html>

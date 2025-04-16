@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
+}
+
+/* Agrupa a logo e o nome da marca */
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre a logo e o nome */
+}
+
+.logo img {
+    width: 80px; /* Ajuste conforme necessário */
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navbar */
+nav {
+    margin-left: 50px; /* Espaço entre o nome da marca e o menu */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* Seção Hero */
+.hero {
+    background: url('car-banner.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.hero button {
+    background: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.hero button:hover {
+    background: #d35400;
+}
+
+/* Seção de Carros */
+.carros-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.carro {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+}
+
+.carro img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carro button {
+    background: #e67e22;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.carro button:hover {
+    background: #d35400;
+}
+
+/* Botão Alugar Agora */
+.alugar-btn {
+    background: #e74c3c;
+    padding: 12px 25px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.alugar-btn:hover {
+    background: #c0392b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 30px;
+    }
+
+    .carros-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
