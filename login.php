@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $usuario = $resultado->fetch_assoc();
 
         // Verificar senha (Se estiver criptografada no banco, use password_verify)
-        if ($senha === $usuario['senha']) {
+        if (password_verify($senha, $usuario['senha']))  {
             echo "Login bem-sucedido!";
             // Redirecionar para a home ou página do usuário
         } else {
